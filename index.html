@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Job Board</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+    <header>
+        <h1>Job Board</h1>
+        <form>
+            <label for="location-filter">Location:</label>
+            <input type="text" id="location-filter">
+            <label for="keyword-filter">Keywords:</label>
+            <input type="text" id="keyword-filter">
+            <label for="salary-filter">Salary:</label>
+            <input type="text" id="salary-filter">
+            <button type="submit">Clear</button>
+        </form>
+    </header>
+
+    <main>
+        <section>
+            <div id="featured-jobs">
+                <h2>Featured Jobs</h2>
+                <!--jobs will be generated here using javascript and json-->
+                <a href="#">Apply Now</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <h5>&copy; 2023 Job Board. All rights reserved.</h5>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

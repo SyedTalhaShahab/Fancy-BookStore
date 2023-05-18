@@ -1,0 +1,274 @@
+/* Global Styles */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+#featured-jobs {
+    text-align: left;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    margin: 0;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+h3 {
+    color: rgb(0, 191, 255);
+    font-size: large;
+    font-weight: 700;
+}
+
+h1 {
+    color: white;
+}
+
+h2 {
+    color: white;
+}
+
+label {
+    color: white;
+    font-weight: 700;
+    font-size: x-large;
+}
+
+
+h4 {
+    font-weight: 700;
+    font-size: x-large;
+    color: rgb(0, 0, 0);
+}
+
+h5 {
+    font-weight: 300;
+    font-size: large;
+    color: rgb(0, 0, 0);
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Header Styles */
+header {
+    background-color: #f2f2f2;
+    background-color: rgb(0, 191, 255);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+form {
+    display: flex;
+    align-items: center;
+}
+
+label {
+    margin-right: 10px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    margin-right: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #2b2a2a;
+}
+
+/* Main Styles */
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+p {
+    margin: 0;
+    margin-bottom: 5px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer h5 {
+    color: white;
+    text-align: right;
+}
+
+.job {
+    display: inline-block;
+    text-align: left;
+    margin: 0px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+.job button {
+    background-color: rgb(0, 191, 255);
+    border: 2px solid rgb(0, 191, 255);
+    color: white;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 4px;
+    margin-top: 8px;
+    cursor: pointer;
+}
+
+.job {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 0px;
+    height: calc(100% - 50px);
+    /* Subtract 50 pixels from the container height */
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    form {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    input[type="text"] {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    button[type="submit"] {
+        width: 100%;
+    }
+}
+
+/* small screens
+/ Adjust layout & styling for small screens */
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+
+    .header {
+        display: none;
+    }
+
+    .menu {
+        flex-direction: column;
+    }
+
+    .item {
+        margin-bottom: 10px;
+    }
+}
+
+
+/* medium screens /
+/ Adjust layout & styling for medium screens */
+@media only screen and (min-width: 600px) and (max-width: 1200px) {
+    body {
+        font-size: 16px;
+    }
+
+    .header {
+        display: block;
+    }
+
+    .menu {
+        flex-direction: column;
+    }
+
+    .item {
+        margin-bottom: 20px;
+    }
+}
+
+/* large screens /
+/ Adjust layout & styling for large screens */
+@media only screen and (min-width: 1200px) {
+    body {
+        font-size: 18px;
+    }
+
+    .header {
+        display: block;
+    }
+
+    .menu {
+        flex-direction: row;
+    }
+
+    .item {
+        margin-bottom: 30px;
+    }
+}
